@@ -620,7 +620,7 @@ int getEnemyIndexByRow(int row){				// Requirement #6
 }
 
 void drawCaution(){								// Requirement #6
-  println(playerRow);
+  //println(playerRow);
 	// Draw a caution sign above the enemy under the screen using int getEnemyIndexByRow(int row)
 
 		// HINT:
