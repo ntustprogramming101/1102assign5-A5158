@@ -602,20 +602,15 @@ int getEnemyIndexByRow(int row){				// Requirement #6
 		// - If there's a soldier in that row, return that soldier's index in soldierX/soldierY
 		// (for example, if soldierY[3] is in that row, return 3)
 		// - Return -1 if there's no soldier in that row
-  //for(int i = 0; i < soldierY.length; i++){
-    if(soldierY[1]==(row+5)*SOIL_SIZE){
-      return 1;
-    }else if(soldierY[2]==(row+5)*SOIL_SIZE){
-      return 2;
-    }else if(soldierY[3]==(row+5)*SOIL_SIZE){
-      return 3;
-    }else if(soldierY[4]==(row+5)*SOIL_SIZE){
-      return 4;
-    }else if(soldierY[5]==(row+5)*SOIL_SIZE){
-      return 5;
-    }else{
-      return -1;
+  for(int i = 0; i < soldierY.length; i++){
+    if(soldierY[i]==(row+5)*SOIL_SIZE){
+      return i;
+    }else {
+      
+      continue;
     }
+  }
+  return -1 ;
 
 }
 
